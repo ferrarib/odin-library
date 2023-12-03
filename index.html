@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="search"><img src="assets/magnify.svg" alt="Search" style="width: 20px"><input type="search" name=""
+                id=""></div>
+        <button id="add-book"><img src="assets/plus-svgrepo-com.svg" alt="Search" style="width: 30px"></button>
+    </div>
+    <div id="body">
+    </div>
+
+    <dialog id="edit-dialog" class="edit-dialog">
+        <form action="#" method="post" id="EditForm">
+            <div class="dialog-content">
+                <div class="dialog-child">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="dialog-child">
+                    <label for="author">Author: </label>
+                    <input type="text" name="author" id="author">
+                </div>
+                <div class="dialog-child">
+                    <label for="pages">Pages: </label>
+                    <input type="number" name="pages" id="pages">
+                </div>
+                <div class="dialog-child">
+                    <label for="have-read">Have Read: </label>
+                    <input type="checkbox" name="have-read" id="have-read">
+                </div>
+                <input type="hidden" name="id">
+                <div class="dialog-buttons">
+                    <button class="cancel-add">Close</button>
+                    <button autofocus class="confirm-add">Submit</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="add-dialog" class="add-dialog">
+        <form action="#" method="post" id="AddForm">
+            <div class="dialog-content">
+                <div class="dialog-child">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="dialog-child">
+                    <label for="author">Author: </label>
+                    <input type="text" name="author" id="author">
+                </div>
+                <div class="dialog-child">
+                    <label for="pages">Pages: </label>
+                    <input type="number" name="pages" id="pages">
+                </div>
+                <div class="dialog-child">
+                    <label for="have-read">Have Read: </label>
+                    <input type="checkbox" name="have-read" id="have-read">
+                </div>
+                <div class="dialog-buttons">
+                    <button class="cancel-add">Close</button>
+                    <button autofocus class="confirm-add">Submit</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
